@@ -1,0 +1,43 @@
+.mode {
+  font-size: 1.8em;
+  background: rgba(73, 73, 73, 0.37);
+  border-radius: 50%;
+  padding: 0.1em;
+}
+.theme i {
+  font-size: 1.8em;
+  margin: 0em 0.5em;
+}
+.alert {
+  padding: 0.3em 1em!important;
+}
+.accordion-button::after{
+  filter: invert(1) !important;
+}
+@media only screen and (max-width: 420px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 0.8em !important;
+    padding: 0.2em 0.4em !important;
+  }
+  .preview {
+    padding: 0em 0.5em !important;
+    font-size: 0.8rem;
+  }
+  .theme {
+    text-align: center;
+  }
+  .nav-item {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .nav-item a span {
+    border: 2px solid;
+    padding: 0.1rem 0.8rem !important;
+  }
+}
