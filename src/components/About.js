@@ -7,8 +7,8 @@ export default function About(props) {
 
     let forColor = props.mode === 'dark' ? '#fff' : '#000';
     return (
-        <div className="container py-5" style={{ background: forBg, color: forColor }} >
-            <h1 className="my-2">About US</h1>
+        <div className="container about py-5 px-0" style={{ color: forColor }} >
+            <h1 className="my-3">About US</h1>
             <div className="accordion border" id="accordionExample">
                 <div className="accordion-item" style={{ background: forBg, color: forColor }}>
                     <h2 className="accordion-header" id="headingOne">

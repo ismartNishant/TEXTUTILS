@@ -59,7 +59,7 @@ function App() {
       <Router>
         <Navbar mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
-        <div className="container my-2">
+        <div className="container my-5">
           <Routes>
             <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try Textutils:-  Word Counter | Character Counter |Remove Spaces | " mode={mode} />}>
             </Route>

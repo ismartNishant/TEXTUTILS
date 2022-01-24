@@ -1,3 +1,8 @@
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
 .mode {
   font-size: 1.8em;
   background: rgba(73, 73, 73, 0.37);
@@ -9,74 +14,139 @@
   margin: 0em 0.5em;
 }
 .alert {
-  padding: 0.3em 1em!important;
+  padding: 0.3em 1em !important;
 }
-.accordion-button::after{
+.accordion-button::after {
   filter: invert(1) !important;
 }
 .navbar-brand,
-.foo-box h1{
+.foo-box h1 {
   color: #0dcaf0 !important;
+}
+.about {
+  height: 80vh;
 }
 
 /* -----------------------------
       footer section
 ------------------------------*/
-.foo-box h1{
+.foo-box h1 {
   font-family: "nunito", sans-serif;
   font-weight: bolder;
   font-size: 3rem;
 }
-.credit{
+.credit {
   text-align: center;
 }
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.foo-box h3 i{
-  color:#0dcaf0 ;
+.foo-box h3 i {
+  color: #0dcaf0;
 }
 
-.footer-container .foo-box{
+.footer-container .foo-box {
   flex: 1 1 20rem;
   margin: 0.5em 1.5em;
 }
-.socials{
+.socials {
   display: inline-flex;
   flex-direction: column;
 }
-.socials a{
+.socials a {
   text-decoration: none;
-  padding: .2rem 0rem;
+  padding: 0.2rem 0rem;
   font-size: 1.2rem;
   color: #fff;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .socials a i,
-.contact-info ul li i{
+.contact-info ul li i {
   padding-right: 1rem;
 }
 .contact-info ul {
   list-style: none;
 }
-.contact-info ul li{
+.contact-info ul li {
   font-size: 1.2rem;
   cursor: pointer;
-  padding-top: .2rem;
-  transition: all .5s ease-in-out;
+  padding-top: 0.2rem;
+  transition: all 0.5s ease-in-out;
 }
 .contact-info ul li:hover,
-.socials a:hover{
+.socials a:hover {
   color: #0dcaf0;
   padding-left: 1rem;
 }
-.terms{
+.terms {
   text-align: right;
   margin-right: 1rem;
 }
-@media only screen and (max-width: 420px) {
+@media (max-width: 1024px) {
+  .about h1 {
+    font-size: 3rem;
+  }
+  strong {
+    font-weight: bolder;
+    font-size: 1.8rem;
+  }
+  .accordion-body {
+    font-size: 1.8rem;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+    margin-right: 3rem;
+  }
+  .nav-link {
+    font-size: 1.8rem;
+  }
+  .theme i {
+    font-size: 2.8em;
+    margin: 0em 0.3em;
+  }
+  .footer-container .foo-box {
+    flex: 1 1 19rem;
+    margin: 0.5em 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  .foo-box h1 {
+    font-size: 2.5rem;
+  }
+  .my-2 {
+    margin-top: 10.5rem !important;
+    margin-bottom: 11.5rem !important;
+  }
+}
+@media (max-width: 800px) {
+  .my-2 {
+    margin-top: 9.5rem !important;
+    margin-bottom: 4.5rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .footer-container .foo-box {
+    margin: 0.5em 1.5rem;
+    align-items: flex-start;
+  }
+  .about h1 {
+    font-size: 3rem;
+  }
+  strong {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  .accordion-body {
+    font-size: 1.5rem;
+  }
+  .my-2 {
+    margin-top: 4rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+@media screen and (max-width: 420px) {
   h2 {
     font-size: 1.3rem;
   }
@@ -94,12 +164,29 @@
   .theme {
     text-align: center;
   }
+  .theme i {
+    font-size: 1.8rem;
+    margin: 0em 0.5rem;
+  }
   .nav-item {
     text-align: center;
+    font-size: 1.5rem;
+  }
+  .nav-link{
     font-size: 1.5rem;
   }
   .nav-item a span {
     border: 2px solid;
     padding: 0.1rem 0.8rem !important;
+  }
+  .accordion-body {
+    font-size: 1rem;
+  }
+  .about h1 {
+    font-size: 2rem;
+  }
+  strong {
+    font-weight: bolder;
+    font-size: 1rem;
   }
 }

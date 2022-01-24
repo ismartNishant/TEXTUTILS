@@ -55,7 +55,7 @@ export default function TextForm(props) {
     }
     return (
         <>
-            <div className="container" style={{ color: props.mode === 'dark' ? "white" : 'black' }}>
+            <div className="container my-2" style={{ color: props.mode === 'dark' ? "white" : 'black' }}>
                 <h4> Welcome to textUtils </h4>
                 <h2 className="">{props.heading} </h2>
                 <div className="">
@@ -75,7 +75,7 @@ export default function TextForm(props) {
                 {/* <button disabled={text.length === 0} className="btn btn-info m-1" onClick={makeTitleCase}>Title Case</button> */}
                 <button disabled={text.length === 0} className="btn btn-info m-1" onClick={handleExtraSpace} >Remove extra Spaces</button>
             </div>
-            <div className="container pt-3">
+            <div className="container py-5">
                 <h2>Your Text sumary</h2>
                 <p>Words : {text.split(/\s+/).filter((element) => { return element.length !== 0 }).length}  | letters : {text.length} </p>
                 <p>{0.008 * text.split(" ").filter((element) => { return element.length !== 0 }).length} Minutes To read</p>
