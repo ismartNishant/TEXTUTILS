@@ -55,23 +55,21 @@ function App() {
     }
   }
   return (
-    <>
+    <div className="App">
       <Router>
-        <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
+        <Navbar mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-2">
           <Routes>
-            <Route exact path="/about">
-              <About mode={mode} toggleMode={toggleMode} />
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try Textutils:-  Word Counter | Character Counter |Remove Spaces | " mode={mode} />}>
             </Route>
-            <Route exact path="/">
-              <TextForm showAlert={showAlert} heading="Try Textutils:-  Word Counter | Character Counter |Remove Spaces | " mode={mode} />
+            <Route exact path="/about" element={<About mode={mode} toggleMode={toggleMode} />}>
             </Route>
           </Routes>
         </div>
-        <Footer mode={mode} toggleMode={toggleMode}/>
+        <Footer mode={mode} toggleMode={toggleMode} />
       </Router>
-    </>
+    </div>
   );
 }
 
